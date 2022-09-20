@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for digit1 in range(0, 9):
-    for digit2 in range(digit1 + 1, 10):
-        if digit1 == 8:
-            print("{:d}{:d}".format(digit1, digit2))
-            break
-        print("{:d}{:d}".format(digit1, digit2), end=",
+for n1 in range(0, 10):
+    for n2 in range((n1+1), 10):
+        if (n1 is not 8) or (n2 is not 9):
+            print("{}{}, ".format(n1, n2), end="")
+        else:
+            print("{}{}".format(n1, n2))
